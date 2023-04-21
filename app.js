@@ -1,5 +1,7 @@
 // let createError = require('http-errors');
 // let express = require('express');
+import 'dotenv/config.js'
+import './config/database.js'
 import createError from 'http-errors';
 import express from 'express';
 
@@ -10,7 +12,7 @@ import logger from 'morgan'
 import indexRouter from './routes/index.js'
 import usersRouter from './routes/users.js'
 import {__dirname} from './utils.js'
-import 'dotenv/config.js'
+
 
 const app = express();
 
