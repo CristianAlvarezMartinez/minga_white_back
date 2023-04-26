@@ -5,17 +5,16 @@ import { authors } from './authors.js'
 import { companies } from './companies.js'
 import { categories } from './categories.js'
 import { mangas_v1 } from './mangas.js'
-import { heroImgs } from './hero_imgs.js'
+import { imgscrl } from './hero_imgs.js'
 import User from '../User.js'
 import Author from '../Author.js'
 import Company from '../Company.js'
 import Category from '../Category.js'
 import Manga from '../Manga.js'
 import Chapter from '../Chapter.js'
-import Hero_Imgs from '../Hero_imgs.js'
+import Imgscrl from '../Hero_imgs.js'
 
-let newHeroimgs = async() => await Hero_Imgs.insertMany(heroImgs);
-newHeroimgs()
+let newHeroimgs = async(imgscrl) => await Imgscrl.insertMany(imgscrl);
 
 let newCategories = async(categories) => await Category.insertMany(categories)
 //insertMany es un método de mongoose para insertar muchos documentos en la base de mongo
@@ -58,6 +57,7 @@ let data = async () => {
     await newUsers(users)
     await newRoles(authors,companies)
     await newMangas(mangas_v1)
+    await newHeroimgs(imgscrl)
     console.log('done!')
 }
 
