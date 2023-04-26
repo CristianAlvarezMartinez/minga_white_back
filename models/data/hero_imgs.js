@@ -1,4 +1,4 @@
-export let heroImgs = [
+export let imgscrl = [
     {
         img: 'https://i.postimg.cc/0ygVfSbX/img1.png'
     },
