@@ -7,6 +7,6 @@ let schema = new mongoose.Schema({
     timestamps: true
 })
 
-let collection = 'heroImgs'
-let Hero_Imgs = mongoose.model(collection, schema)
-export default Hero_Imgs
+let collection = 'imgscrl'
+let imgscrl = mongoose.model(collection, schema)
+export default imgscrl

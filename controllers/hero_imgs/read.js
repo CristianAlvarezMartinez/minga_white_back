@@ -1,8 +1,8 @@
-import heroImgs  from "../../models/Hero_imgs.js";
+import imgscrl  from "../../models/Hero_imgs.js";
 
 let read = async (req, res, next) => {
     try {
-        let all = await heroImgs.find()
+        let all = await imgscrl.find()
         return res.status(200)
             .json({
                 imgs: all

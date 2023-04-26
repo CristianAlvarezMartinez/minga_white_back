@@ -6,7 +6,7 @@ import categoryRouter from './categories.js'
 import companyRouter from './companies.js'
 import chapterRouter from './chapters.js'
 import mangasRouter from './mangas.js'
-import heroImgsRouter from './heroImg.js'
+import imgscrlRouter from './heroImg.js'
 
 const router = express.Router();
 
@@ -24,6 +24,6 @@ router.use('/categories', categoryRouter)
 router.use('/companies', companyRouter)
 router.use('/chapters', chapterRouter)
 router.use('/mangas', mangasRouter)
-router.use('/heroImgs', heroImgsRouter)
+router.use('/imgscrl', imgscrlRouter)
 
 export default  router;
